@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        header{
+            background-color: lightgray;
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(149, 147, 147);
+        }
+        .logo{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            letter-spacing: 4px;
+        }
+        .one{
+            font-weight: 700;
+        }
+        .navigation a{
+             color: black;
+             text-decoration: none;
+             font-size: 1.1em;
+             font-weight: 500;
+             padding: 15px;
+        }
+        .navigation a:hover{
+            background-color: darkgray;
+        }
+        .main{
+            padding: 450px 700px; 
+            color: white; 
+            font-size: larger;
+            width: 100%;
+            min-height: 100vh;   
+            display: flex;
+            align-items: center;
+            background: url(images/R.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+       }
+        .two{
+            background-color: black;
+            opacity: .6;
+            font-weight: 1000;
+            margin-right: 10px;
+        }
+        .title{
+            margin: 50px 0px 30px 10px;
+        }
+        .houses{
+            display: flex;
+            margin: 20px 50px;
+            flex-direction: row;
+        }
+        .house{
+            position: relative;
+            margin: 10px;
+            flex-grow: 1;
+        }
+        .house img{
+            width: 300px;
+            height: 220px;
+        }
+        .house p{
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+        }
+        section p.about{
+            margin: 20px;
+        }
+        section div.members{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: 25px;
+        }
+        div.member{
+            flex-grow: 1;
+            margin: 7px;
+        }
+        div.member img{
+            width: 100%;
+            filter: grayscale(70%);
+        }
+        div.member p.name{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        div.member p.job{
+            color: #888;
+            margin: 15px 0px 5px;
+
+        }
+        div.member p.desc{
+            line-height: 1.5;
+            color: #333;
+        }
+        div.member button{
+            width: 100%;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 1em;
+            margin-top: 10px;
+            background-color: #999;
+        }
+        div.member button:hover{
+            background-color: rgb(106, 106, 106);
+            color: white;
+        }
+        section p.contact{
+            margin: 20px 0px 10px 25px;
+        }
+        section form{
+            margin: 20px 50px 10px 25px;
+        }
+        #name,#email,#subject,#comment{
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 7px;
+            border: 1px solid lightgray;
+            font-size: 16px;
+        }
+        #submit{
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+        }
+        #submit:hover{
+            background-color: gray;
+            color: black;
+        }
+        div.footer{
+            margin: 30px 25px 2px 25px;
+        }
+        div.footer img{
+            width: 100%;
+        }
+        p.footer{
+            background-color: black;
+            color: white;
+            padding: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        p.footer a.link{
+            color: red;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo"><span class="one">BR</span> Architects</a>
+        <nav class="navigation">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="main" id="home">
+        <div>
+            <h2><span class="two">BR</span>Architects</h2>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <hr style="margin-bottom: 10px;">
+
+        <div class="houses">
+            <div class="house">
+                 <img src="images/summer house 1.jpg" alt="">
+                 <p>Summer House</p>
+            </div>
+               
+            <div class="house">
+                <img src="images/brick house 1.jpg" alt="">
+                <p>Brick House</p>
+            </div>
+           
+            <div class="house">
+                <img src="images/renovated 1.jpg" alt="">
+                <p>Renovated House</p>
+            </div>
+            
+            <div class="house">
+                <img src="images/barn house 1.jpg" alt="">
+                <p>Barn House</p>
+            </div>
+        </div>
+
+        <div class="houses">
+            <div class="house">
+                 <img src="images/summer house 2.jpg" alt="">
+                 <p>Summer House</p>
+            </div>
+               
+            <div class="house">
+                <img src="images/brick house 2.jpg" alt="">
+                <p>Brick House</p>
+            </div>
+           
+            <div class="house">
+                <img src="images/renovated 2.jpg" alt="">
+                <p>renovated House</p>
+            </div>
+            
+            <div class="house">
+                <img src="images/barn house 2.jpg" alt="">
+                <p>Barn House</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="" id="about">
+        <h2 class="title">About</h2>
+        <hr style="margin-bottom: 10px;">
+        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eius tempore iusto natus adipisci at amet reiciendis eligendi repudiandae autem maxime eveniet fugit, molestiae labore temporibus alias harum,
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloribus accusantium eius voluptatem dicta praesentium at, hic corrupti vero dignissimos quibusdam id ex accusamus, laboriosam perferendis dolorum doloremque? Reprehenderit, fugit!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex omnis aliquam modi. Enim velit iure omnis id, molestiae, nulla, quas dolore optio numquam cumque corrupti obcaecati harum odit quisquam at. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Harum id nisi, temporibus reprehenderit debitis quaerat necessitatibus rem unde cum quasi eum vitae aut. Adipisci similique soluta assumenda,
+               officia maiores commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias eligendi, reprehenderit officiis,
+                ipsum similique ullam iste ea maiores ex placeat? Libero non maiores aliquid, harum voluptate reprehenderit placeat provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio perspiciatis totam, debitis tempora culpa nulla expedita labore placeat quaerat minus nam,
+                 facere explicabo. Odio, modi! Autem, veniam.Sit, exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, rem commodi ipsam quo expedita beatae autem delectus error, voluptates tempora porro culpa laboriosam suscipit alias, voluptate dicta recusandae in a!
+        </p>
+        <div class="members">
+            <div class="member">
+                <img src="images/member1.jpg" alt="">
+                <p class="name">John Doe</p>
+                <p class="job">CEO & Founder</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sequi cum iure doloribus quisquam velit eos eligendi vero! Enim architecto libero itaque sapiente laborum non optio voluptates aliquam accusantium perferendis.</p>
+                <button>contact</button>
+            </div>
+
+            <div class="member">
+                <img src="images/member2.jpg" alt="">
+                <p class="name">Jana Doe</p>
+                <p class="job">Archetict</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sequi cum iure doloribus quisquam velit eos eligendi vero! Enim architecto libero itaque sapiente laborum non optio voluptates aliquam accusantium perferendis.</p>
+                <button>contact</button>
+            </div>
+
+            <div class="member">
+                <img src="images/member3.jpg" alt="">
+                <p class="name">Dan Star</p>
+                <p class="job">Archetict</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sequi cum iure doloribus quisquam velit eos eligendi vero! Enim architecto libero itaque sapiente laborum non optio voluptates aliquam accusantium perferendis.</p>
+                <button>contact</button>
+            </div>
+
+            <div class="member">
+                <img src="images/member4.jpg" alt="">
+                <p class="name">Mick Rose</p>
+                <p class="job">Archetict</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sequi cum iure doloribus quisquam velit eos eligendi vero! Enim architecto libero itaque sapiente laborum non optio voluptates aliquam accusantium perferendis.</p>
+                <button>contact</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title">Contact</h2>
+        <hr style="margin-bottom: 10px;">
+        <p class="contact">Lets get touch and talk about your next project.</p>
+        <form action="#">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="subject" placeholder="Subject">
+            <input type="text" id="comment" placeholder="Comment">
+            <button type="submit" id="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div class="footer">
+        <img src="images/map.jpg" alt="loc" id="map">
+        <p class="footer">Powerd by me <a href="http://www.linkedin.com" class="link">&hearts;</a></p>
+    </div>
+</body>
+</html>
